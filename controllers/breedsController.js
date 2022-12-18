@@ -5,7 +5,6 @@ let oneBreedInfo = {};
 const getAllBreeds = async (req, res) => {
 	const fetchBreed = async () => {
 		const URL_ALL_BREEDS = `https://api.thecatapi.com/v1/breeds`;
-	
 		await fetch(URL_ALL_BREEDS, {headers: {
 			'x-api-key': process.env.API_KEY
 		}})
