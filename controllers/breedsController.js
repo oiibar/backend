@@ -21,7 +21,7 @@ const getAllBreeds = async (req, res) => {
 		})
 		.then(data => JSON.stringify(allBreeds));
 	}
-	fetchBreed();
+	await fetchBreed();
 	res.status(200).json(allBreeds);
 }
 
@@ -45,7 +45,7 @@ const getOneBreed = async (req, res) => {
 		})
 		.then(data => JSON.stringify(oneBreed));
 	}
-  fetchBreed();
+  await fetchBreed();
   res.status(200).json(oneBreed);
 }
 
